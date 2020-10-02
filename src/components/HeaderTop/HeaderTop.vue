@@ -1,6 +1,7 @@
 <template>
+  <!--首页头部-->
   <header class="header">
-    <slot name="left"></slot>
+  <slot name="left"></slot>
     <span class="header_title">
       <span class="header_title_text ellipsis">{{title}}</span>
     </span>
@@ -17,6 +18,7 @@
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  @import '../../common/stylus/mixins.styl'
   .header
     background-color #02a774
     position fixed
